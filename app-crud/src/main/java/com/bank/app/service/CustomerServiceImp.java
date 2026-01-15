@@ -37,11 +37,11 @@ public class CustomerServiceImp implements CustomerService {
         Optional<Customer> customerOptional = customerRepository.findById(id);
         Customer savedCustomer = customerOptional
                 .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND));
-        customer.setFirstName(savedCustomer.getFirstName());
-        customer.setLastName(savedCustomer.getLastName());
-        customer.setEmail(savedCustomer.getEmail());
-        customer.setPhoneNumber(String.valueOf(savedCustomer.getPhoneNumber()));
-        customerRepository.save(customer);
+        savedCustomer.setFirstName(customer.getFirstName());
+        savedCustomer.setLastName(customer.getLastName());
+        savedCustomer.setEmail(customer.getEmail());
+        savedCustomer.setPhoneNumber(customer.getPhoneNumber());
+        customerRepository.save(savedCustomer);
         return "Customer with id: " + id + " updated successfully";
     }
 

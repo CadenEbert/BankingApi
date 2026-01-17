@@ -68,4 +68,8 @@ public class Customer {
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
+
+    public void setCustomerId(Long id) {
+        this.id = id;
+    }
 }

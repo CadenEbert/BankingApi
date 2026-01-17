@@ -53,7 +53,7 @@ public class H2DatabaseStructureTest {
             }
 
             if (!customerTableFound) {
-                System.out.println("⚠️ CUSTOMER table does not exist in the H2 database.");
+                System.out.println("CUSTOMER table does not exist in the H2 database.");
                 System.out.println("\nTroubleshooting tips:");
                 System.out.println("1. Ensure your entity class is annotated with @Entity.");
                 System.out.println("2. Make sure the table name matches the entity name or is properly mapped using @Table(name = \"CUSTOMER\").");

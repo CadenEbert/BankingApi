@@ -53,7 +53,7 @@ public class H2DatabaseStructureTest {
             }
 
             if (!customerTableFound) {
-                System.out.println("CUSTOMER table not found in the database.");
+                System.out.println("CUSTOMER table does not exist in the H2 database.");
             }
         }
     }

@@ -53,13 +53,7 @@ public class H2DatabaseStructureTest {
             }
 
             if (!customerTableFound) {
-                System.out.println("CUSTOMER table does not exist in the H2 database.");
-                System.out.println("\nTroubleshooting tips:");
-                System.out.println("1. Ensure your entity class is annotated with @Entity.");
-                System.out.println("2. Make sure the table name matches the entity name or is properly mapped using @Table(name = \"CUSTOMER\").");
-                System.out.println("3. Verify that your application has run and initialized the schema correctly.");
-                System.out.println("4. Check for any missing annotations on fields (e.g., @Id for primary key).");
-                System.out.println("5. Ensure you are using the correct database configuration (H2 in-memory in this lab).");
+                System.out.println("CUSTOMER table not found in the database.");
             }
         }
     }

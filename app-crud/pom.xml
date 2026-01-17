@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.ecommerce</groupId>
-	<artifactId>sb-ecom</artifactId>
+	<artifactId>bankingapi</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>sb-ecom</name>
-	<description>Spring Boot Ecommerce Project</description>
+	<name>bankingapi</name>
+	<description>Spring Boot Banking App</description>
 	<url/>
 	<licenses>
 		<license/>

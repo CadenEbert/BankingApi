@@ -29,7 +29,7 @@ public class CustomerServiceImp implements CustomerService {
     @Override
     public CustomerDTO createCustomer(CustomerDTO customerDTO) {
         Customer customer = modelMapper.map(customerDTO, Customer.class);
-        Customer customerFromDB = customerRepository.findByCustomerFirstName(customer.getFirstName());
+        Customer customerFromDB = customerRepository.findByFirstName(customer.getFirstName());
         if (customerFromDB != null) {
             throw new ResponseStatusException(HttpStatus.CONFLICT, "Customer already exists");
         }
@@ -73,11 +73,13 @@ public class CustomerServiceImp implements CustomerService {
 
     @Override
     public CustomerDTO updateCustomer(CustomerDTO customerDTO, Long id) {
-        Customer customer = modelMapper.map(customerDTO, Customer.class);
         Customer customerFromDB = customerRepository.findById(id)
                 .orElseThrow(() -> new ResourceNotFoundException("Customer", "customerId", id));
-        customer.setCustomerId(customerFromDB.getId());
-        customerFromDB = customerRepository.save(customer);
+        customerFromDB.setFirstName(customerDTO.getFirstName());
+        customerFromDB.setLastName(customerDTO.getLastName());
+        customerFromDB.setEmail(customerDTO.getEmail());
+        customerFromDB.setPhoneNumber(customerDTO.getPhoneNumber());
+        customerFromDB = customerRepository.save(customerFromDB);
 
 
 

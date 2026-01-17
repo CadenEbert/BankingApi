@@ -33,7 +33,6 @@ public class CustomerController {
 
     @GetMapping("/public/customers")
     public ResponseEntity<CustomerResponse> getAllCustomers(
-            @RequestBody Customer customer,
             @RequestParam(name = "pageNumber") Integer pageNumber,
             @RequestParam(name = "pageSize") Integer pageSize
     ) {

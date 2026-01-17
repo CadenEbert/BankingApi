@@ -54,8 +54,6 @@ mvn spring-boot:run
 
 The application will start on `http://localhost:8080`
 
-## Running Tests
-
 ### Run all tests
 ```bash
 mvn test
@@ -65,10 +63,6 @@ mvn test
 ```bash
 mvn test -Dtest=CustomerServiceImpTest
 ```
-
-### In IntelliJ IDEA
-- Click the green play icon next to test class or method name in the gutter
-- Or right-click and select "Run"
 
 ## Database
 
@@ -321,34 +315,6 @@ src/
 - Input validation with Jakarta Bean Validation
 - Exception handling prevents sensitive information leakage
 
-## Learning Resources
 
-This project demonstrates:
-- How to structure a Spring Boot application
-- REST API design patterns and best practices
-- JPA/Hibernate ORM usage for database operations
-- Spring Data repositories for data access
-- Unit testing with Mockito and AssertJ
-- Exception handling strategies
-- Data Transfer Object (DTO) pattern
 
-## Enhancing the Project
 
-Here are some ideas to build on this foundation:
-1. Add database authentication and authorization
-2. Implement role-based access control (RBAC)
-3. Increase test coverage with integration tests
-4. Add transaction management with @Transactional
-5. Add API documentation with Swagger/OpenAPI
-6. Implement logging with SLF4J
-7. Add caching with Spring Cache
-
-## License
-
-Open source - feel free to use for learning and internship projects
-
----
-
-Created as a professional portfolio project for internship applicationsbash
-curl -X DELETE http://localhost:8080/api/customers/1
-```

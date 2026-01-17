@@ -1,0 +1,10 @@
+INSERT INTO customers (first_name, last_name, email, phone_number) VALUES ('John', 'Doe', 'john.doe@example.com', '555-0101');
+INSERT INTO customers (first_name, last_name, email, phone_number) VALUES ('Jane', 'Smith', 'jane.smith@example.com', '555-0102');
+INSERT INTO customers (first_name, last_name, email, phone_number) VALUES ('Robert', 'Johnson', 'robert.johnson@example.com', '555-0103');
+INSERT INTO customers (first_name, last_name, email, phone_number) VALUES ('Emily', 'Williams', 'emily.williams@example.com', '555-0104');
+INSERT INTO customers (first_name, last_name, email, phone_number) VALUES ('Michael', 'Brown', 'michael.brown@example.com', '555-0105');
+INSERT INTO customers (first_name, last_name, email, phone_number) VALUES ('Sarah', 'Davis', 'sarah.davis@example.com', '555-0106');
+INSERT INTO customers (first_name, last_name, email, phone_number) VALUES ('David', 'Miller', 'david.miller@example.com', '555-0107');
+INSERT INTO customers (first_name, last_name, email, phone_number) VALUES ('Jessica', 'Wilson', 'jessica.wilson@example.com', '555-0108');
+INSERT INTO customers (first_name, last_name, email, phone_number) VALUES ('James', 'Moore', 'james.moore@example.com', '555-0109');
+INSERT INTO customers (first_name, last_name, email, phone_number) VALUES ('Linda', 'Taylor', 'linda.taylor@example.com', '555-0110');
